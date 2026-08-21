@@ -85,7 +85,7 @@ function Stat({ stat, index }: { stat: (typeof stats)[number]; index: number }) 
       <span ref={ref} className="mt-3 block font-display text-xl font-semibold sm:text-2xl">
         {Math.round(value).toLocaleString()}
         {stat.suffix}
-      </p>
+      </span>
       <p className="mt-0.5 truncate text-[11px] text-muted-foreground sm:text-xs">{stat.label}</p>
     </div>
   );
