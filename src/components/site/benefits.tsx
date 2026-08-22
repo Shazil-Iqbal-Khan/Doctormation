@@ -17,7 +17,7 @@ const benefits = [
   "Full visibility into demand across departments",
 ];
 
-function Metric({ value, suffix, decimals = 0 }: { value: number; suffix: string; decimals?: number }) {
+function Metric({ value, suffix, decimals = 0 }: { value: number; suffix: string; decimals?: number | undefined }) {
   const { ref, value: animated } = useCountUp(value);
   return (
     <p className="font-display text-4xl font-semibold sm:text-5xl">
