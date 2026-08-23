@@ -44,6 +44,8 @@
   --color-ink-foreground: var(--ink-foreground);
   --color-mint: var(--mint);
   --color-mint-foreground: var(--mint-foreground);
+  --color-peach: var(--peach);
+  --color-peach-foreground: var(--peach-foreground);
   --color-signal: var(--signal);
   --color-signal-foreground: var(--signal-foreground);
   --color-chart-1: var(--chart-1);
@@ -148,7 +150,7 @@
   h3,
   h4 {
     font-family: var(--font-display);
-    letter-spacing: -0.03em;
+    letter-spacing: -0.022em;
     text-wrap: balance;
   }
 }
@@ -160,6 +162,10 @@
 @utility surface-ink {
   background-image: var(--gradient-ink);
   color: var(--ink-foreground);
+}
+
+@utility surface-glass {
+  background-image: var(--gradient-glass);
 }
 
 @utility surface-accent {
@@ -179,11 +185,23 @@
   box-shadow: var(--shadow-float);
 }
 
+@utility glass-card {
+  background-color: color-mix(in oklab, var(--card) 72%, transparent);
+  backdrop-filter: blur(18px) saturate(140%);
+  border: 1px solid color-mix(in oklab, white 62%, var(--border));
+  box-shadow: var(--shadow-soft);
+}
+
+@utility soft-blob {
+  filter: blur(64px);
+  opacity: 0.55;
+}
+
 @utility grid-lines {
   background-image:
     linear-gradient(to right, color-mix(in oklab, var(--border) 70%, transparent) 1px, transparent 1px),
     linear-gradient(to bottom, color-mix(in oklab, var(--border) 70%, transparent) 1px, transparent 1px);
-  background-size: 56px 56px;
+  background-size: 72px 72px;
 }
 
 @utility reveal {
