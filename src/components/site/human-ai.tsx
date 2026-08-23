@@ -34,7 +34,7 @@ export function HumanAi() {
             title={
               <>
                 AI does not replace your staff.
-                <br />
+                <br className="hidden sm:block" />{" "}
                 It removes the work that drains them.
               </>
             }

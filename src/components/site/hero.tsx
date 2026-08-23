@@ -11,7 +11,7 @@ const chips = [
 
 export function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden pt-28 pb-16 sm:pt-36 lg:pb-24">
+    <section id="top" className="relative overflow-hidden pt-24 pb-14 sm:pt-36 lg:pb-24">
       <div className="pointer-events-none absolute inset-0 surface-hero" aria-hidden />
       <div
         className="pointer-events-none absolute inset-x-0 top-0 h-[520px] opacity-[0.35] grid-lines [mask-image:radial-gradient(70%_60%_at_50%_0%,black,transparent)]"
@@ -19,7 +19,7 @@ export function Hero() {
       />
       <Container className="relative">
         <div className="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
-          <div>
+          <div className="min-w-0">
             <Reveal>
               <Eyebrow>
                 <span className="size-1.5 rounded-full bg-signal" />
@@ -27,23 +27,23 @@ export function Hero() {
               </Eyebrow>
             </Reveal>
             <Reveal delay={80}>
-              <h1 className="mt-6 text-[2.6rem] leading-[1.02] font-semibold sm:text-6xl lg:text-[4.1rem]">
+              <h1 className="mt-5 text-[2.1rem] leading-[1.05] font-semibold sm:mt-6 sm:text-6xl lg:text-[4.1rem]">
                 AI-powered automation for modern healthcare
                 <span className="text-primary">.</span>
               </h1>
             </Reveal>
             <Reveal delay={160}>
-              <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+              <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-muted-foreground sm:mt-6 sm:text-lg">
                 Automate patient communication, appointments, follow-ups and everyday hospital workflows —
                 while your staff focus on what matters most: patient care.
               </p>
             </Reveal>
             <Reveal delay={240}>
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <Cta size="lg" href="#demo">
+              <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row">
+                <Cta size="lg" href="#demo" className="w-full sm:w-auto">
                   Book a Demo <ArrowRight className="size-4" />
                 </Cta>
-                <Cta size="lg" variant="outline" href="#how-it-works">
+                <Cta size="lg" variant="outline" href="#how-it-works" className="w-full sm:w-auto">
                   <Play className="size-3.5" /> See How It Works
                 </Cta>
               </div>
