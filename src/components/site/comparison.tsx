@@ -12,7 +12,7 @@ const rows = [
 
 export function Comparison() {
   return (
-    <section className="py-20 sm:py-28">
+    <section className="py-16 sm:py-28">
       <Container>
         <SectionHeading
           align="center"
@@ -35,20 +35,33 @@ export function Comparison() {
           </div>
           <ul className="divide-y divide-border">
             {rows.map((row) => (
-              <li key={row.label} className="grid gap-3 p-6 sm:grid-cols-[1.1fr_1fr_1fr] sm:items-center sm:gap-6">
+              <li
+                key={row.label}
+                className="grid gap-3 p-5 sm:grid-cols-[1.1fr_1fr_1fr] sm:items-center sm:gap-6 sm:p-6"
+              >
                 <p className="text-sm font-semibold">{row.label}</p>
-                <p className="flex items-start gap-2 text-sm text-muted-foreground">
-                  <span className="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full bg-destructive/10 text-destructive">
-                    <X className="size-3" />
-                  </span>
-                  {row.manual}
-                </p>
-                <p className="flex items-start gap-2 text-sm">
-                  <span className="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full bg-accent text-accent-foreground">
-                    <Check className="size-3" />
-                  </span>
-                  {row.ai}
-                </p>
+                <div className="min-w-0">
+                  <p className="mb-1 font-mono text-[9px] tracking-[0.16em] text-muted-foreground uppercase sm:hidden">
+                    Manual today
+                  </p>
+                  <p className="flex items-start gap-2 text-sm text-muted-foreground">
+                    <span className="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full bg-destructive/10 text-destructive">
+                      <X className="size-3" />
+                    </span>
+                    {row.manual}
+                  </p>
+                </div>
+                <div className="min-w-0">
+                  <p className="mb-1 font-mono text-[9px] tracking-[0.16em] text-primary uppercase sm:hidden">
+                    With Medrelay
+                  </p>
+                  <p className="flex items-start gap-2 text-sm">
+                    <span className="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full bg-accent text-accent-foreground">
+                      <Check className="size-3" />
+                    </span>
+                    {row.ai}
+                  </p>
+                </div>
               </li>
             ))}
           </ul>

@@ -29,7 +29,7 @@ function Metric({ value, suffix, decimals = 0 }: { value: number; suffix: string
 
 export function Benefits() {
   return (
-    <section className="py-20 sm:py-28">
+    <section className="py-16 sm:py-28">
       <Container>
         <SectionHeading
           eyebrow="Outcomes"

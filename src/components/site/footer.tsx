@@ -25,8 +25,8 @@ const groups = [
 export function Footer() {
   return (
     <footer id="about" className="border-t border-border bg-card">
-      <Container className="grid gap-10 py-14 lg:grid-cols-[1.3fr_1fr_1fr_1fr]">
-        <div>
+      <Container className="grid grid-cols-2 gap-8 py-12 sm:gap-10 lg:grid-cols-[1.3fr_1fr_1fr_1fr] lg:py-14">
+        <div className="col-span-2 lg:col-span-1">
           <div className="flex items-center gap-2.5">
             <span className="grid size-9 place-items-center rounded-xl surface-ink">
               <Stethoscope className="size-4.5" />

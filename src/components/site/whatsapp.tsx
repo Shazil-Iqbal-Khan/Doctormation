@@ -31,7 +31,7 @@ const highlights = [
 
 export function WhatsAppSection() {
   return (
-    <section className="border-y border-border bg-surface/50 py-20 sm:py-28">
+    <section className="border-y border-border bg-surface/50 py-16 sm:py-28">
       <Container>
         <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:gap-16">
           <div>
