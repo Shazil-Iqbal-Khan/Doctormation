@@ -63,9 +63,9 @@ export function SectionHeading({
       )}
     >
       {eyebrow ? <Eyebrow>{eyebrow}</Eyebrow> : null}
-      <h2 className="mt-5 text-3xl leading-[1.08] font-semibold sm:text-4xl lg:text-[2.9rem]">{title}</h2>
+      <h2 className="mt-4 text-[1.75rem] leading-[1.12] font-semibold sm:mt-5 sm:text-4xl lg:text-[2.9rem]">{title}</h2>
       {description ? (
-        <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">{description}</p>
+        <p className="mt-4 text-[15px] leading-relaxed text-muted-foreground sm:text-lg">{description}</p>
       ) : null}
     </Reveal>
   );
