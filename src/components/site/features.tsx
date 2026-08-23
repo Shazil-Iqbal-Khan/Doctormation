@@ -130,7 +130,7 @@ const features = [
 
 export function Features() {
   return (
-    <section id="features" className="border-y border-border bg-surface/50 py-20 sm:py-28">
+    <section id="features" className="border-y border-border bg-surface/50 py-16 sm:py-28">
       <Container>
         <SectionHeading
           eyebrow="Automation capabilities"

@@ -12,7 +12,7 @@ const rows = [
 
 export function Comparison() {
   return (
-    <section className="py-20 sm:py-28">
+    <section className="py-16 sm:py-28">
       <Container>
         <SectionHeading
           align="center"

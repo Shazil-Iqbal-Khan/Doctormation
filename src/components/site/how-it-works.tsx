@@ -12,7 +12,7 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-20 sm:py-28">
+    <section id="how-it-works" className="py-16 sm:py-28">
       <Container>
         <SectionHeading
           align="center"

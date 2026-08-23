@@ -21,7 +21,7 @@ const points = [
 
 export function HumanAi() {
   return (
-    <section className="relative overflow-hidden border-y border-border py-20 sm:py-28">
+    <section className="relative overflow-hidden border-y border-border py-16 sm:py-28">
       <div className="absolute inset-0 surface-ink" aria-hidden />
       <div
         className="pointer-events-none absolute inset-0 opacity-[0.07] grid-lines [mask-image:radial-gradient(70%_60%_at_50%_40%,black,transparent)]"

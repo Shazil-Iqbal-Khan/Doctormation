@@ -33,7 +33,7 @@ const testimonials = [
 
 export function Trust() {
   return (
-    <section id="solutions" className="border-y border-border bg-surface/50 py-20 sm:py-28">
+    <section id="solutions" className="border-y border-border bg-surface/50 py-16 sm:py-28">
       <Container>
         <SectionHeading
           eyebrow="Trust & security"

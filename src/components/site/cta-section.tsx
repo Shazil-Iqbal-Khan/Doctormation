@@ -9,7 +9,7 @@ const bullets = [
 
 export function CtaSection() {
   return (
-    <section id="demo" className="py-20 sm:py-28">
+    <section id="demo" className="py-16 sm:py-28">
       <Container>
         <Reveal className="relative overflow-hidden rounded-[2.5rem] border border-border p-8 shadow-float sm:p-14">
           <div className="absolute inset-0 surface-ink" aria-hidden />
