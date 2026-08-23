@@ -138,24 +138,30 @@ export function Features() {
           description="Each capability is configurable per department, doctor and workflow — you decide what the AI is allowed to do."
         />
 
-        <ul className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {features.map((feature, i) => (
-            <Reveal
-              as="li"
-              key={feature.title}
-              delay={(i % 4) * 80}
-              className="group flex flex-col rounded-3xl border border-border bg-card p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-card"
-            >
-              <span className="grid size-10 place-items-center rounded-xl bg-muted text-primary transition-colors group-hover:bg-accent">
-                <feature.icon className="size-4.5" />
-              </span>
-              <h3 className="mt-4 text-base font-semibold">{feature.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{feature.body}</p>
-              <div className="mt-5 grid min-h-[104px] items-end rounded-2xl bg-surface/70 p-3">
-                {feature.visual}
-              </div>
-            </Reveal>
-          ))}
+        <ul className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-6 lg:gap-5">
+          {features.map((feature, i) => {
+            const spans = ["lg:col-span-3", "lg:col-span-3", "lg:col-span-2", "lg:col-span-2", "lg:col-span-2"];
+            return (
+              <Reveal
+                as="li"
+                key={feature.title}
+                delay={(i % 3) * 90}
+                className={cn(
+                  "group flex flex-col rounded-[1.9rem] glass-card p-6 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-card",
+                  spans[i % spans.length],
+                )}
+              >
+                <span className="grid size-11 place-items-center rounded-2xl surface-glass text-primary transition-transform duration-500 group-hover:scale-105">
+                  <feature.icon className="size-5" strokeWidth={1.6} />
+                </span>
+                <h3 className="mt-5 text-[1.05rem] font-semibold">{feature.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{feature.body}</p>
+                <div className="mt-6 grid min-h-[104px] items-end rounded-[1.4rem] bg-surface/60 p-3.5">
+                  {feature.visual}
+                </div>
+              </Reveal>
+            );
+          })}
         </ul>
       </Container>
     </section>

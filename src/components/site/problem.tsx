@@ -39,32 +39,37 @@ export function Problem() {
           description="Before automation, most patient interaction is manual — and it compounds every single day."
         />
 
-        <ul className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-6 lg:gap-5">
           {problems.map((problem, i) => (
             <Reveal
               as="li"
               key={problem.title}
               delay={i * 70}
-              className="group rounded-3xl border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-card"
+              className={cn(
+                "group rounded-[1.9rem] glass-card p-6 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-card",
+                i === 0 ? "lg:col-span-3 lg:row-span-2 lg:flex lg:flex-col lg:justify-center" : "lg:col-span-3",
+              )}
             >
-              <span className="grid size-11 place-items-center rounded-2xl bg-muted text-muted-foreground transition-colors group-hover:bg-accent group-hover:text-accent-foreground">
-                <problem.icon className="size-5" />
+              <span className="grid size-11 place-items-center rounded-2xl surface-glass text-primary transition-transform duration-500 group-hover:scale-105">
+                <problem.icon className="size-5" strokeWidth={1.6} />
               </span>
-              <h3 className="mt-5 text-lg font-semibold">{problem.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{problem.body}</p>
+              <h3 className={cn("mt-5 font-semibold", i === 0 ? "text-xl sm:text-2xl" : "text-lg")}>
+                {problem.title}
+              </h3>
+              <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">{problem.body}</p>
             </Reveal>
           ))}
 
           <Reveal
             as="li"
             delay={350}
-            className="grid place-items-center rounded-3xl border border-dashed border-primary/30 bg-card/40 p-6 text-center"
+            className="grid place-items-center rounded-[1.9rem] surface-accent p-8 text-center lg:col-span-3"
           >
             <div>
-              <p className="font-display text-xl leading-snug font-semibold">
+              <p className="font-display text-2xl leading-snug font-semibold">
                 What if these tasks could happen automatically?
               </p>
-              <p className="mt-2 text-sm text-muted-foreground">That is exactly what Medrelay does.</p>
+              <p className="mt-2.5 text-sm opacity-80">That is exactly what Medrelay does.</p>
             </div>
           </Reveal>
         </ul>
