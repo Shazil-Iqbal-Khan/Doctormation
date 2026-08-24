@@ -46,9 +46,9 @@ export function Trust() {
             <Reveal
               key={pillar.title}
               delay={(i % 3) * 80}
-              className="rounded-3xl border border-border bg-card p-6 transition-transform duration-300 hover:-translate-y-1"
+              className="rounded-[1.9rem] glass-card p-6 transition-transform duration-500 hover:-translate-y-1"
             >
-              <span className="grid size-10 place-items-center rounded-xl bg-muted text-primary">
+              <span className="grid size-10 place-items-center rounded-2xl surface-glass text-primary">
                 <pillar.icon className="size-4.5" />
               </span>
               <h3 className="mt-4 text-base font-semibold">{pillar.title}</h3>
@@ -63,7 +63,7 @@ export function Trust() {
               as="article"
               key={item.name}
               delay={i * 90}
-              className="flex flex-col justify-between rounded-3xl border border-border bg-card p-6 shadow-soft"
+              className="flex flex-col justify-between rounded-[1.9rem] glass-card p-6"
             >
               <p className="text-[15px] leading-relaxed">&ldquo;{item.quote}&rdquo;</p>
               <div className="mt-6 border-t border-border pt-4">

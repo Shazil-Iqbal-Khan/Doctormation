@@ -26,9 +26,9 @@ export function DashboardShowcase() {
               <Reveal
                 key={stat.label}
                 delay={i * 80}
-                className="rounded-3xl border border-border bg-card p-5 shadow-soft"
+                className="rounded-[1.9rem] glass-card p-6"
               >
-                <span className="grid size-10 place-items-center rounded-xl bg-muted text-primary">
+                <span className="grid size-10 place-items-center rounded-2xl surface-glass text-primary">
                   <stat.icon className="size-4.5" />
                 </span>
                 <p className="mt-4 font-display text-2xl font-semibold">{stat.value}</p>

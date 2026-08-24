@@ -14,7 +14,15 @@ export function Hero() {
     <section id="top" className="relative overflow-hidden pt-24 pb-14 sm:pt-36 lg:pb-24">
       <div className="pointer-events-none absolute inset-0 surface-hero" aria-hidden />
       <div
-        className="pointer-events-none absolute inset-x-0 top-0 h-[520px] opacity-[0.35] grid-lines [mask-image:radial-gradient(70%_60%_at_50%_0%,black,transparent)]"
+        className="pointer-events-none absolute -top-24 -left-24 size-[420px] rounded-full bg-mint soft-blob float-slow"
+        aria-hidden
+      />
+      <div
+        className="pointer-events-none absolute -top-10 right-[-10%] size-[380px] rounded-full bg-peach soft-blob float-slow [animation-delay:-3s]"
+        aria-hidden
+      />
+      <div
+        className="pointer-events-none absolute inset-x-0 top-0 h-[520px] opacity-[0.22] grid-lines [mask-image:radial-gradient(65%_55%_at_50%_0%,black,transparent)]"
         aria-hidden
       />
       <Container className="relative">

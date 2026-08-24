@@ -86,7 +86,7 @@ function Stat({ stat, index }: { stat: (typeof stats)[number]; index: number }) 
         {Math.round(value).toLocaleString()}
         {stat.suffix}
       </span>
-      <p className="mt-0.5 truncate text-[11px] text-muted-foreground sm:text-xs">{stat.label}</p>
+      <p className="mt-0.5 text-[11px] leading-snug text-muted-foreground sm:text-xs">{stat.label}</p>
     </div>
   );
 }
@@ -121,7 +121,7 @@ export function CommandCenter({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "overflow-hidden rounded-3xl border border-border bg-card/80 shadow-float backdrop-blur",
+        "overflow-hidden rounded-[1.9rem] glass-card/80 shadow-float backdrop-blur",
         className,
       )}
     >
@@ -204,7 +204,7 @@ export function CommandCenter({ className }: { className?: string }) {
             {/* AI activity */}
             <div className="rounded-2xl border border-border bg-card p-4">
               <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
-                <p className="truncate text-sm font-semibold">AI assistant activity</p>
+                <p className="text-sm font-semibold">AI assistant activity</p>
                 <Activity className="size-3.5 shrink-0 text-muted-foreground" />
               </div>
               <Sparkline />
