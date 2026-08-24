@@ -42,7 +42,7 @@ export function Benefits() {
             <Reveal
               key={metric.label}
               delay={i * 80}
-              className="rounded-3xl border border-border bg-card p-6 shadow-soft"
+              className="rounded-[1.9rem] glass-card p-6"
             >
               <Metric value={metric.value} suffix={metric.suffix} decimals={metric.decimals} />
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{metric.label}</p>

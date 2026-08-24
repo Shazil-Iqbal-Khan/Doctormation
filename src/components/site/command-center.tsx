@@ -121,7 +121,7 @@ export function CommandCenter({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "overflow-hidden rounded-3xl border border-border bg-card/80 shadow-float backdrop-blur",
+        "overflow-hidden rounded-[1.9rem] glass-card/80 shadow-float backdrop-blur",
         className,
       )}
     >

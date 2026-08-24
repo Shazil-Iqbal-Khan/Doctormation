@@ -21,7 +21,7 @@ export function Comparison() {
           description="Nothing is taken away from your team — the repetitive load is."
         />
 
-        <Reveal className="mt-12 overflow-hidden rounded-3xl border border-border bg-card shadow-card">
+        <Reveal className="mt-12 overflow-hidden rounded-[1.9rem] glass-card shadow-card">
           <div className="grid grid-cols-1 divide-y divide-border sm:grid-cols-[1.1fr_1fr_1fr] sm:divide-x sm:divide-y-0">
             <div className="hidden px-6 py-4 font-mono text-[10px] tracking-[0.16em] text-muted-foreground uppercase sm:block">
               Workflow
