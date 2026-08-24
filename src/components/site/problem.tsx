@@ -48,13 +48,13 @@ export function Problem() {
               delay={i * 70}
               className={cn(
                 "group rounded-[1.9rem] glass-card p-6 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-card",
-                i === 0 ? "lg:col-span-3 lg:row-span-2 lg:flex lg:flex-col lg:justify-center" : "lg:col-span-3",
+                ["lg:col-span-2", "lg:col-span-2", "lg:col-span-2", "lg:col-span-3", "lg:col-span-3"][i],
               )}
             >
               <span className="grid size-11 place-items-center rounded-2xl surface-glass text-primary transition-transform duration-500 group-hover:scale-105">
                 <problem.icon className="size-5" strokeWidth={1.6} />
               </span>
-              <h3 className={cn("mt-5 font-semibold", i === 0 ? "text-xl sm:text-2xl" : "text-lg")}>
+              <h3 className={cn("mt-5 font-semibold", i > 2 ? "text-xl" : "text-lg")}>
                 {problem.title}
               </h3>
               <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">{problem.body}</p>
@@ -64,7 +64,7 @@ export function Problem() {
           <Reveal
             as="li"
             delay={350}
-            className="grid place-items-center rounded-[1.9rem] surface-accent p-8 text-center lg:col-span-3"
+            className="grid place-items-center rounded-[1.9rem] surface-accent p-8 text-center sm:col-span-2 lg:col-span-6"
           >
             <div>
               <p className="font-display text-2xl leading-snug font-semibold">
