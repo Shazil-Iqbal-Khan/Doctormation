@@ -32,7 +32,7 @@ export function Eyebrow({ children, className }: { children: ReactNode; classNam
   return (
     <span
       className={cn(
-        "inline-flex items-center gap-2 rounded-full border border-border bg-card/70 px-3.5 py-1.5 font-mono text-[11px] tracking-[0.16em] text-muted-foreground uppercase",
+        "inline-flex items-center gap-2 rounded-full border border-white/70 bg-card/60 px-4 py-1.5 text-[11px] font-medium tracking-[0.14em] text-muted-foreground uppercase shadow-soft backdrop-blur-md",
         className,
       )}
     >
@@ -63,9 +63,13 @@ export function SectionHeading({
       )}
     >
       {eyebrow ? <Eyebrow>{eyebrow}</Eyebrow> : null}
-      <h2 className="mt-4 text-[1.75rem] leading-[1.12] font-semibold sm:mt-5 sm:text-4xl lg:text-[2.9rem]">{title}</h2>
+      <h2 className="mt-5 text-[1.8rem] leading-[1.14] font-semibold sm:mt-6 sm:text-[2.5rem] lg:text-[3rem]">
+        {title}
+      </h2>
       {description ? (
-        <p className="mt-4 text-[15px] leading-relaxed text-muted-foreground sm:text-lg">{description}</p>
+        <p className="mt-4 text-[15px] leading-[1.75] font-normal text-muted-foreground sm:text-[1.05rem]">
+          {description}
+        </p>
       ) : null}
     </Reveal>
   );
@@ -76,21 +80,20 @@ export function Container({ children, className }: { children: ReactNode; classN
 }
 
 const ctaVariants = cva(
-  "inline-flex items-center justify-center gap-2 rounded-full text-sm font-medium transition-all duration-300 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:outline-none disabled:opacity-60",
+  "inline-flex items-center justify-center gap-2 rounded-full text-sm font-medium transition-all duration-500 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:outline-none disabled:opacity-60",
   {
     variants: {
       variant: {
-        primary:
-          "bg-ink text-ink-foreground shadow-soft hover:-translate-y-0.5 hover:shadow-card",
+        primary: "bg-ink text-ink-foreground shadow-soft hover:-translate-y-0.5 hover:shadow-card",
         accent: "surface-accent shadow-soft hover:-translate-y-0.5 hover:shadow-card",
         outline:
-          "border border-border bg-card/60 text-foreground hover:border-foreground/25 hover:bg-card",
+          "border border-white/70 bg-card/55 text-foreground shadow-soft backdrop-blur-md hover:-translate-y-0.5 hover:bg-card",
         ghostLight:
           "border border-ink-foreground/25 text-ink-foreground hover:bg-ink-foreground/10",
       },
       size: {
         md: "h-11 px-5",
-        lg: "h-13 px-7 text-[0.95rem]",
+        lg: "h-14 px-8 text-[0.98rem]",
       },
     },
     defaultVariants: { variant: "primary", size: "md" },
