@@ -13,11 +13,7 @@ export default defineConfig({
     server: { entry: "server" },
   },
   nitro: {
-    // Use cloudflare-pages preset which outputs static files
-    preset: "cloudflare-pages",
-    prerender: {
-      crawlLinks: true,
-      routes: ["/"],
-    },
+    // Use node-server for building
+    preset: "node-server",
   },
 });
