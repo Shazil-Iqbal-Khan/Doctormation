@@ -13,7 +13,11 @@ export default defineConfig({
     server: { entry: "server" },
   },
   nitro: {
-    // Override to use node-server preset for Render deployment
-    preset: "node-server",
+    // Use cloudflare-pages preset which outputs static files
+    preset: "cloudflare-pages",
+    prerender: {
+      crawlLinks: true,
+      routes: ["/"],
+    },
   },
 });
