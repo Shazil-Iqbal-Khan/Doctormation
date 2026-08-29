@@ -4,8 +4,10 @@ services:
     env: node
     region: oregon
     plan: free
-    buildCommand: npm install && npm run build
-    startCommand: node .output/server/index.mjs
+    buildCommand: npm ci && npm run build
+    startCommand: node server-start.mjs
     envVars:
       - key: NODE_VERSION
-        value: 18.20.0
+        value: 20.11.0
+      - key: NODE_ENV
+        value: production
