@@ -664,17 +664,9 @@ Build the landing page as a polished, production-quality SaaS website.
 
 REFERENCE IMAGES : "Analyze these references and identify the design language I should use. Do not copy individual websites. I want you to combine the visual principles from the references into an original design for my healthcare AI automation company."
 
-This project was built with [Lovable](https://lovable.dev).
+## About Medrelay
 
-**Live app**: https://health-auto-mate.lovable.app
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/2c0741b6-c45e-4c37-9d6a-b29e8971d2a7).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+Medrelay is an AI-powered automation platform designed specifically for healthcare providers. We help hospitals, clinics, and doctors automate repetitive administrative tasks, improve patient communication, and streamline healthcare workflows.
 
 ## Development
 
@@ -686,3 +678,5 @@ cd <repository-name>
 npm i
 npm run dev
 ```
+#   D o c t o r m a t i o n  
+ 
