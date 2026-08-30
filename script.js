@@ -26,9 +26,9 @@ window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
     
     if (currentScroll > 50) {
-        header.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.1)';
+        header.classList.add('scrolled');
     } else {
-        header.style.boxShadow = 'none';
+        header.classList.remove('scrolled');
     }
     
     lastScroll = currentScroll;
@@ -78,9 +78,9 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe feature cards for animation
-document.querySelectorAll('.feature-card').forEach(card => {
+document.querySelectorAll('.feature-card, .problem-card, .benefit-card, .workflow-step, .trust-card').forEach(card => {
     card.style.opacity = '0';
-    card.style.transform = 'translateY(20px)';
-    card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    card.style.transform = 'translateY(30px)';
+    card.style.transition = 'opacity 0.8s ease, transform 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
     observer.observe(card);
 });
