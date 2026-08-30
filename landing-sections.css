@@ -1,0 +1,1179 @@
+/* Landing Page Lower Sections - Premium SaaS Design */
+
+/* Global Section Styles */
+.section-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .section-container {
+        padding: 0 2.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .section-container {
+        padding: 0 4rem;
+    }
+}
+
+.section-eyebrow {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--hero-muted);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.section-headline {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    color: var(--hero-foreground);
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .section-headline {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .section-headline {
+        font-size: 3.5rem;
+    }
+}
+
+.section-headline-center {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    color: var(--hero-foreground);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .section-headline-center {
+        font-size: 3rem;
+    }
+}
+
+.section-supporting {
+    font-family: var(--font-body);
+    font-size: 1.125rem;
+    color: var(--hero-muted);
+    line-height: 1.75;
+    max-width: 40rem;
+}
+
+.section-supporting-center {
+    font-family: var(--font-body);
+    font-size: 1.125rem;
+    color: var(--hero-muted);
+    line-height: 1.75;
+    text-align: center;
+    max-width: 40rem;
+    margin: 0 auto 3rem;
+}
+
+.headline-italic {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* Problem Section */
+.section-problem {
+    padding: 6rem 0;
+    background: white;
+}
+
+@media (min-width: 768px) {
+    .section-problem {
+        padding: 8rem 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .section-problem {
+        padding: 10rem 0;
+    }
+}
+
+.activity-panel-wrapper {
+    margin: 3rem 0;
+}
+
+.activity-panel {
+    background: white;
+    border: 1px solid var(--hero-border);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.activity-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--hero-border);
+    background: hsl(0, 0%, 98%);
+}
+
+.activity-title {
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--hero-foreground);
+}
+
+.activity-status {
+    font-size: 0.75rem;
+    color: #10b981;
+}
+
+.activity-list {
+    padding: 0.5rem;
+}
+
+.activity-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: background 0.2s;
+}
+
+.activity-item:hover {
+    background: hsl(0, 0%, 98%);
+}
+
+.activity-icon {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--hero-border);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--hero-muted);
+}
+
+.activity-content {
+    flex: 1;
+}
+
+.activity-text {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--hero-foreground);
+    margin-bottom: 0.25rem;
+}
+
+.activity-detail {
+    font-size: 0.75rem;
+    color: var(--hero-muted);
+}
+
+.activity-time {
+    font-size: 0.75rem;
+    color: var(--hero-muted);
+    flex-shrink: 0;
+}
+
+.pain-points-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .pain-points-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .pain-points-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+.pain-point-card {
+    background: white;
+    border: 1px solid var(--hero-border);
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pain-point-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.pain-point-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid var(--hero-border);
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: var(--hero-foreground);
+}
+
+.pain-point-title {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--hero-foreground);
+    margin-bottom: 0.5rem;
+}
+
+.pain-point-description {
+    font-size: 0.875rem;
+    color: var(--hero-muted);
+    line-height: 1.6;
+}
+
+/* Transition Section */
+.section-transition {
+    padding: 8rem 0;
+    background: hsl(0, 0%, 98%);
+}
+
+@media (min-width: 1024px) {
+    .section-transition {
+        padding: 12rem 0;
+    }
+}
+
+.transition-content {
+    text-align: center;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.transition-headline {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    color: var(--hero-foreground);
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+    .transition-headline {
+        font-size: 3rem;
+    }
+}
+
+.transition-divider {
+    width: 12rem;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--hero-border), transparent);
+    margin: 0 auto 3rem;
+}
+
+.transition-subhead {
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--hero-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.75rem;
+}
+
+.transition-description {
+    font-size: 1.125rem;
+    color: var(--hero-muted);
+    line-height: 1.75;
+}
+
+/* How It Works Section */
+.section-how-it-works {
+    padding: 6rem 0;
+    background: white;
+}
+
+@media (min-width: 1024px) {
+    .section-how-it-works {
+        padding: 10rem 0;
+    }
+}
+
+.workflow-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+    .workflow-steps {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 0;
+    }
+}
+
+.workflow-step {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1.5rem;
+}
+
+.step-number {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    color: var(--hero-accent);
+    margin-bottom: 1rem;
+}
+
+.step-icon-circle {
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid var(--hero-border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: var(--hero-foreground);
+}
+
+.step-title {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--hero-foreground);
+    margin-bottom: 0.5rem;
+}
+
+.step-description {
+    font-size: 0.875rem;
+    color: var(--hero-muted);
+    line-height: 1.6;
+}
+
+.workflow-connector {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .workflow-connector {
+        display: block;
+        width: 2rem;
+        height: 1px;
+        background: var(--hero-border);
+        align-self: center;
+        margin-top: 5rem;
+    }
+}
+
+/* WhatsApp Section */
+.section-whatsapp {
+    padding: 6rem 0;
+    background: hsl(0, 0%, 98%);
+}
+
+@media (min-width: 1024px) {
+    .section-whatsapp {
+        padding: 10rem 0;
+    }
+}
+
+.whatsapp-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+@media (min-width: 1024px) {
+    .whatsapp-layout {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+}
+
+.whatsapp-headline {
+    font-family: var(--font-display);
+    font-size: 2.25rem;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    color: var(--hero-foreground);
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .whatsapp-headline {
+        font-size: 2.75rem;
+    }
+}
+
+.whatsapp-supporting {
+    font-size: 1rem;
+    color: var(--hero-muted);
+    line-height: 1.75;
+    margin-bottom: 2rem;
+}
+
+.whatsapp-checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.checklist-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.9375rem;
+    color: var(--hero-foreground);
+}
+
+.check-icon {
+    color: var(--hero-accent);
+    flex-shrink: 0;
+}
+
+.whatsapp-mockup-container {
+    display: flex;
+    justify-content: center;
+}
+
+.whatsapp-mockup {
+    width: 100%;
+    max-width: 24rem;
+    background: white;
+    border: 1px solid var(--hero-border);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 25px 80px -12px rgba(0, 0, 0, 0.08);
+}
+
+.whatsapp-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+    background: #25D366;
+    color: white;
+}
+
+.whatsapp-header-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.whatsapp-avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: white;
+    color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.whatsapp-name {
+    font-size: 0.9375rem;
+    font-weight: 600;
+}
+
+.whatsapp-status {
+    font-size: 0.75rem;
+    opacity: 0.9;
+}
+
+.automated-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.625rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 9999px;
+    font-size: 0.625rem;
+    font-weight: 500;
+}
+
+.whatsapp-messages {
+    padding: 1.5rem 1rem;
+    background: #ece5dd;
+    min-height: 24rem;
+}
+
+.whatsapp-message {
+    margin-bottom: 1rem;
+}
+
+.whatsapp-message.patient {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.whatsapp-message.ai {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.message-bubble {
+    max-width: 80%;
+    padding: 0.625rem 0.875rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.whatsapp-message.patient .message-bubble {
+    background: #dcf8c6;
+}
+
+.whatsapp-message.ai .message-bubble {
+    background: white;
+}
+
+.message-time {
+    font-size: 0.625rem;
+    color: var(--hero-muted);
+    margin-top: 0.25rem;
+}
+
+/* Automation Section */
+.section-automation {
+    padding: 6rem 0;
+    background: white;
+}
+
+@media (min-width: 1024px) {
+    .section-automation {
+        padding: 10rem 0;
+    }
+}
+
+.capabilities-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .capabilities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .capabilities-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.capability-featured {
+    grid-column: 1 / -1;
+    background: hsl(0, 0%, 98%);
+    border: 1px solid var(--hero-border);
+    border-radius: 1.5rem;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .capability-featured {
+        padding: 4rem 3rem;
+    }
+}
+
+.capability-icon-large {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid var(--hero-border);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: var(--hero-accent);
+}
+
+.capability-title-large {
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+    color: var(--hero-foreground);
+    margin-bottom: 0.75rem;
+}
+
+.capability-description-large {
+    font-size: 1rem;
+    color: var(--hero-muted);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.capability-flow {
+    max-width: 20rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.flow-item {
+    padding: 0.75rem 1rem;
+    background: white;
+    border: 1px solid var(--hero-border);
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--hero-foreground);
+}
+
+.flow-arrow {
+    text-align: center;
+    color: var(--hero-accent);
+    font-size: 1.25rem;
+}
+
+.capability-card {
+    background: white;
+    border: 1px solid var(--hero-border);
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.capability-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.capability-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid var(--hero-border);
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: var(--hero-foreground);
+}
+
+.capability-title {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--hero-foreground);
+    margin-bottom: 0.5rem;
+}
+
+.capability-description {
+    font-size: 0.875rem;
+    color: var(--hero-muted);
+    line-height: 1.6;
+}
+
+/* Benefits Section */
+.section-benefits {
+    padding: 6rem 0;
+    background: hsl(0, 0%, 98%);
+}
+
+@media (min-width: 1024px) {
+    .section-benefits {
+        padding: 10rem 0;
+    }
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .benefits-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.benefit-card {
+    background: white;
+    border: 1px solid var(--hero-border);
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.benefit-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.benefit-metric {
+    display: inline-block;
+    padding: 0.375rem 0.75rem;
+    background: hsl(0, 0%, 96%);
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--hero-accent);
+    margin-bottom: 1rem;
+}
+
+.benefit-title {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--hero-foreground);
+    margin-bottom: 0.5rem;
+}
+
+.benefit-description {
+    font-size: 0.875rem;
+    color: var(--hero-muted);
+    line-height: 1.6;
+}
+
+/* AI + Human Section */
+.section-ai-human {
+    padding: 6rem 0;
+    background: white;
+}
+
+@media (min-width: 1024px) {
+    .section-ai-human {
+        padding: 10rem 0;
+    }
+}
+
+.ai-human-split {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+@media (min-width: 1024px) {
+    .ai-human-split {
+        grid-template-columns: 1fr auto 1fr;
+        gap: 3rem;
+        align-items: center;
+    }
+}
+
+.ai-panel,
+.human-panel {
+    background: hsl(0, 0%, 98%);
+    border: 1px solid var(--hero-border);
+    border-radius: 1.5rem;
+    padding: 2rem;
+}
+
+.panel-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--hero-border);
+    margin-bottom: 1.5rem;
+}
+
+.panel-header h3 {
+    font-family: var(--font-body);
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--hero-foreground);
+}
+
+.panel-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.panel-item {
+    padding: 0.75rem 1rem;
+    background: white;
+    border: 1px solid var(--hero-border);
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--hero-foreground);
+}
+
+.ai-human-connector {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .ai-human-connector {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        color: var(--hero-accent);
+    }
+}
+
+.ai-human-statement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 3rem;
+    padding: 1.5rem 2rem;
+    background: hsl(0, 0%, 98%);
+    border: 1px solid var(--hero-border);
+    border-radius: 1rem;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--hero-foreground);
+    text-align: center;
+}
+
+.ai-human-statement svg {
+    color: var(--hero-accent);
+    flex-shrink: 0;
+}
+
+/* Solutions Section */
+.section-solutions {
+    padding: 6rem 0;
+    background: hsl(0, 0%, 98%);
+}
+
+@media (min-width: 1024px) {
+    .section-solutions {
+        padding: 10rem 0;
+    }
+}
+
+.solutions-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .solutions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.solution-card {
+    background: white;
+    border: 1px solid var(--hero-border);
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.solution-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.solution-icon {
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid var(--hero-border);
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: var(--hero-foreground);
+}
+
+.solution-title {
+    font-family: var(--font-body);
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--hero-foreground);
+    margin-bottom: 0.5rem;
+}
+
+.solution-description {
+    font-size: 0.875rem;
+    color: var(--hero-muted);
+    line-height: 1.6;
+}
+
+/* Trust Section */
+.section-trust {
+    padding: 6rem 0;
+    background: hsla(0, 0%, 96%, 0.4);
+}
+
+@media (min-width: 1024px) {
+    .section-trust {
+        padding: 8rem 0;
+    }
+}
+
+.trust-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 3rem;
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.9375rem;
+    color: var(--hero-foreground);
+}
+
+.trust-check {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--hero-border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background: white;
+    color: var(--hero-accent);
+}
+
+/* Final CTA Section */
+.section-final-cta {
+    padding: 8rem 0;
+    background: white;
+}
+
+@media (min-width: 1024px) {
+    .section-final-cta {
+        padding: 12rem 0;
+    }
+}
+
+.final-cta-content {
+    text-align: center;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.final-cta-headline {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    color: var(--hero-foreground);
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .final-cta-headline {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .final-cta-headline {
+        font-size: 3.5rem;
+    }
+}
+
+.final-cta-supporting {
+    font-size: 1.125rem;
+    color: var(--hero-muted);
+    line-height: 1.75;
+    margin-bottom: 2rem;
+}
+
+.final-cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-btn-primary {
+    padding: 1rem 2rem;
+    background: var(--hero-foreground);
+    color: white;
+    border-radius: 9999px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: var(--font-body);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.cta-btn-primary:hover {
+    background: hsl(210, 14%, 25%);
+    transform: translateY(-2px);
+}
+
+.cta-btn-secondary {
+    padding: 1rem 2rem;
+    background: white;
+    color: var(--hero-foreground);
+    border: 1px solid var(--hero-border);
+    border-radius: 9999px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: var(--font-body);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.cta-btn-secondary:hover {
+    background: hsl(0, 0%, 98%);
+    transform: translateY(-2px);
+}
+
+/* Footer */
+.footer {
+    padding: 4rem 0 2rem;
+    background: hsl(0, 0%, 98%);
+    border-top: 1px solid var(--hero-border);
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 1024px) {
+    .footer-top {
+        grid-template-columns: 2fr 3fr;
+        gap: 4rem;
+    }
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-logo-symbol {
+    font-size: 1.25rem;
+    color: var(--hero-foreground);
+}
+
+.footer-logo-text {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--hero-foreground);
+}
+
+.footer-description {
+    font-size: 0.875rem;
+    color: var(--hero-muted);
+    line-height: 1.7;
+    max-width: 28rem;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.footer-column-title {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--hero-muted);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.footer-column a {
+    font-size: 0.875rem;
+    color: var(--hero-muted);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-column a:hover {
+    color: var(--hero-foreground);
+}
+
+.footer-divider {
+    width: 100%;
+    height: 1px;
+    background: var(--hero-border);
+    margin-bottom: 2rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--hero-muted);
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .section-headline,
+    .section-headline-center,
+    .whatsapp-headline {
+        font-size: 2rem;
+    }
+    
+    .transition-headline,
+    .final-cta-headline {
+        font-size: 2rem;
+    }
+}
