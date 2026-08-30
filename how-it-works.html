@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works - Medrelay Demo</title>
+    <meta name="description" content="See Medrelay AI automation in action - Interactive demo of healthcare workflow automation">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&family=Epilogue:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.ico">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="demo-styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M11 2v2"></path>
+                        <path d="M5 2v2"></path>
+                        <path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1"></path>
+                        <path d="M8 15a6 6 0 0 0 12 0v-3"></path>
+                        <circle cx="20" cy="10" r="2"></circle>
+                    </svg>
+                </span>
+                <span class="logo-text">Medrelay<span class="logo-dot">.</span></span>
+            </a>
+            
+            <nav class="nav-menu desktop-nav">
+                <a href="index.html#product">Product</a>
+                <a href="how-it-works.html" class="active">How It Works</a>
+                <a href="index.html#features">Features</a>
+                <a href="index.html#solutions">Solutions</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#demo" class="btn btn-primary">Book a Demo</a>
+            </nav>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 5h16"></path>
+                    <path d="M4 12h16"></path>
+                    <path d="M4 19h16"></path>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="container">
+                <a href="index.html#product">Product</a>
+                <a href="how-it-works.html">How It Works</a>
+                <a href="index.html#features">Features</a>
+                <a href="index.html#solutions">Solutions</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#demo" class="btn btn-primary btn-block">Book a Demo</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="demo-hero">
+        <div class="container">
+            <div class="demo-hero-content">
+                <h1>Experience Medrelay in Action<span class="text-primary">.</span></h1>
+                <p>See how AI automation transforms patient communication and hospital workflows</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Steps -->
+    <section class="workflow-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How Medrelay Works<span class="text-primary">.</span></h2>
+                <p class="section-subtitle">AI-powered automation from patient request to resolution</p>
+            </div>
+            
+            <div class="workflow-visual">
+                <div class="workflow-step-card">
+                    <div class="step-badge">Step 1</div>
+                    <div class="step-icon">📱</div>
+                    <h3>Patient Contacts Hospital</h3>
+                    <p>Via WhatsApp, phone call, or voice message</p>
+                    <div class="step-example">
+                        <strong>Example:</strong> "Hi, I want to book an appointment"
+                    </div>
+                </div>
+
+                <div class="workflow-arrow">→</div>
+
+                <div class="workflow-step-card">
+                    <div class="step-badge">Step 2</div>
+                    <div class="step-icon">🧠</div>
+                    <h3>AI Understands Intent</h3>
+                    <p>Natural language processing analyzes the request</p>
+                    <div class="step-example">
+                        <strong>Detected:</strong> Appointment booking request
+                    </div>
+                </div>
+
+                <div class="workflow-arrow">→</div>
+
+                <div class="workflow-step-card">
+                    <div class="step-badge">Step 3</div>
+                    <div class="step-icon">⚙️</div>
+                    <h3>Automation Executes</h3>
+                    <p>System checks availability and processes request</p>
+                    <div class="step-example">
+                        <strong>Action:</strong> Checking Dr. Ahmed's schedule
+                    </div>
+                </div>
+
+                <div class="workflow-arrow">→</div>
+
+                <div class="workflow-step-card">
+                    <div class="step-badge">Step 4</div>
+                    <div class="step-icon">💾</div>
+                    <h3>Database Updated</h3>
+                    <p>Information synced with hospital systems</p>
+                    <div class="step-example">
+                        <strong>Saved:</strong> Appointment confirmed in EHR
+                    </div>
+                </div>
+
+                <div class="workflow-arrow">→</div>
+
+                <div class="workflow-step-card">
+                    <div class="step-badge">Step 5</div>
+                    <div class="step-icon">✅</div>
+                    <h3>Patient Gets Response</h3>
+                    <p>Instant confirmation with details</p>
+                    <div class="step-example">
+                        <strong>Reply:</strong> "Appointment booked for 5:30 PM"
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Demo Section -->
+    <section class="interactive-demo">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Try the Demo<span class="text-primary">.</span></h2>
+                <p class="section-subtitle">Click on scenarios below to see how Medrelay responds</p>
+            </div>
+
+            <div class="demo-layout">
+                <!-- Scenario Buttons -->
+                <div class="scenario-selector">
+                    <h3>Select a Scenario:</h3>
+                    <button class="scenario-btn active" data-scenario="appointment">
+                        📅 Book Appointment
+                    </button>
+                    <button class="scenario-btn" data-scenario="reschedule">
+                        🔄 Reschedule Appointment
+                    </button>
+                    <button class="scenario-btn" data-scenario="report">
+                        📋 Check Report Status
+                    </button>
+                    <button class="scenario-btn" data-scenario="doctor">
+                        👨‍⚕️ Doctor Information
+                    </button>
+                    <button class="scenario-btn" data-scenario="emergency">
+                        🚨 Escalate to Human
+                    </button>
+                </div>
+
+                <!-- Chat Demo -->
+                <div class="demo-chat-container">
+                    <div class="demo-chat-window">
+                        <div class="demo-chat-header">
+                            <div class="chat-avatar">🏥</div>
+                            <div>
+                                <div class="chat-name">Medrelay Hospital AI</div>
+                                <div class="chat-status">● Online - Responding instantly</div>
+                            </div>
+                        </div>
+                        
+                        <div class="demo-chat-messages" id="demoMessages">
+                            <!-- Messages will be inserted here by JavaScript -->
+                        </div>
+
+                        <div class="demo-chat-footer">
+                            <div class="typing-indicator" id="typingIndicator">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Demo Stats -->
+                    <div class="demo-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">⚡</div>
+                            <div class="stat-value" id="responseTime">0.8s</div>
+                            <div class="stat-label">Response Time</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">✅</div>
+                            <div class="stat-value" id="accuracy">98%</div>
+                            <div class="stat-label">Accuracy Rate</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">🤖</div>
+                            <div class="stat-value" id="automated">85%</div>
+                            <div class="stat-label">Automated</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Comparison -->
+    <section class="comparison-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Traditional vs Automated<span class="text-primary">.</span></h2>
+                <p class="section-subtitle">See the difference automation makes</p>
+            </div>
+
+            <div class="comparison-table">
+                <div class="comparison-column traditional">
+                    <h3>❌ Traditional Process</h3>
+                    <div class="process-step">
+                        <span class="step-num">1</span>
+                        <p>Patient calls or messages</p>
+                        <span class="time-badge">Wait time: 5-30 min</span>
+                    </div>
+                    <div class="process-step">
+                        <span class="step-num">2</span>
+                        <p>Receptionist answers</p>
+                        <span class="time-badge">Manual work</span>
+                    </div>
+                    <div class="process-step">
+                        <span class="step-num">3</span>
+                        <p>Check availability manually</p>
+                        <span class="time-badge">3-5 minutes</span>
+                    </div>
+                    <div class="process-step">
+                        <span class="step-num">4</span>
+                        <p>Enter data in system</p>
+                        <span class="time-badge">2-3 minutes</span>
+                    </div>
+                    <div class="process-step">
+                        <span class="step-num">5</span>
+                        <p>Confirm with patient</p>
+                        <span class="time-badge">1-2 minutes</span>
+                    </div>
+                    <div class="total-time traditional-time">
+                        Total: 15-45 minutes per booking
+                    </div>
+                </div>
+
+                <div class="comparison-column automated">
+                    <h3>✅ Medrelay Automation</h3>
+                    <div class="process-step">
+                        <span class="step-num">1</span>
+                        <p>Patient messages AI</p>
+                        <span class="time-badge">Instant response</span>
+                    </div>
+                    <div class="process-step">
+                        <span class="step-num">2</span>
+                        <p>AI understands request</p>
+                        <span class="time-badge">< 1 second</span>
+                    </div>
+                    <div class="process-step">
+                        <span class="step-num">3</span>
+                        <p>Auto-check availability</p>
+                        <span class="time-badge">< 1 second</span>
+                    </div>
+                    <div class="process-step">
+                        <span class="step-num">4</span>
+                        <p>Auto-update database</p>
+                        <span class="time-badge">< 1 second</span>
+                    </div>
+                    <div class="process-step">
+                        <span class="step-num">5</span>
+                        <p>Instant confirmation</p>
+                        <span class="time-badge">< 1 second</span>
+                    </div>
+                    <div class="total-time automated-time">
+                        Total: 30 seconds - 24/7 available
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to automate your hospital<span class="text-primary">?</span></h2>
+                <p>Book a personalized demo and see how Medrelay can transform your patient workflows</p>
+                <div class="cta-buttons">
+                    <a href="mailto:hello@medrelay.ai" class="btn btn-primary btn-lg">Book a Live Demo</a>
+                    <a href="index.html" class="btn btn-secondary btn-lg">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M11 2v2"></path>
+                                <path d="M5 2v2"></path>
+                                <path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1"></path>
+                                <path d="M8 15a6 6 0 0 0 12 0v-3"></path>
+                                <circle cx="20" cy="10" r="2"></circle>
+                            </svg>
+                        </span>
+                        <span class="logo-text">Medrelay<span class="logo-dot">.</span></span>
+                    </div>
+                    <p>AI automation systems for hospitals, clinics and doctors.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <a href="index.html#product">Command center</a>
+                    <a href="how-it-works.html">How it works</a>
+                    <a href="index.html#features">Features</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Solutions</h4>
+                    <a href="index.html#solutions">Hospitals</a>
+                    <a href="index.html#solutions">Clinics</a>
+                    <a href="index.html#solutions">Doctors</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <a href="mailto:hello@medrelay.ai">hello@medrelay.ai</a>
+                    <a href="index.html#demo">Book a demo</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© <span id="year"></span> Medrelay. All rights reserved.</p>
+                <p>Medrelay does not provide medical advice or diagnosis.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="demo-script.js"></script>
+</body>
+</html>
