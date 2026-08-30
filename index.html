@@ -9,7 +9,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&family=Epilogue:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     
     <!-- Favicon - Medrelay Healthcare Icon -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -18,75 +18,285 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="hero-new.css">
 </head>
-<body>
-    <!-- Navigation -->
-    <header class="header" id="header">
-        <div class="container">
-            <a href="#top" class="logo">
-                <span class="logo-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M11 2v2"></path>
-                        <path d="M5 2v2"></path>
-                        <path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1"></path>
-                        <path d="M8 15a6 6 0 0 0 12 0v-3"></path>
-                        <circle cx="20" cy="10" r="2"></circle>
-                    </svg>
-                </span>
-                <span class="logo-text">Medrelay<span class="logo-dot">.</span></span>
-            </a>
-            
-            <nav class="nav-menu desktop-nav">
-                <a href="#product">Product</a>
-                <a href="how-it-works.html">How It Works</a>
-                <a href="#features">Features</a>
-                <a href="#solutions">Solutions</a>
-                <a href="#about">About</a>
-                <a href="#demo" class="btn btn-primary">Book a Demo</a>
-            </nav>
-            
-            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
-                <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M4 5h16"></path>
-                    <path d="M4 12h16"></path>
-                    <path d="M4 19h16"></path>
-                </svg>
-            </button>
-        </div>
+<body class="hero-page">
+    <!-- Hero Page Container -->
+    <div class="hero-fullscreen">
+        <!-- Background Video -->
+        <video class="hero-video" autoplay loop muted playsinline>
+            <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260319_015952_e1deeb12-8fb7-4071-a42a-60779fc64ab6.mp4" type="video/mp4">
+        </video>
         
-        <!-- Mobile Menu -->
-        <div class="mobile-menu" id="mobileMenu">
-            <div class="container">
-                <a href="#product">Product</a>
-                <a href="how-it-works.html">How It Works</a>
-                <a href="#features">Features</a>
-                <a href="#solutions">Solutions</a>
-                <a href="#about">About</a>
-                <a href="#demo" class="btn btn-primary btn-block">Book a Demo</a>
+        <!-- Navbar -->
+        <header class="hero-header">
+            <div class="hero-nav">
+                <a href="#top" class="hero-logo">
+                    <span class="hero-logo-symbol">✦</span>
+                    <span class="hero-logo-text">Medrelay</span>
+                </a>
+                
+                <nav class="hero-nav-links">
+                    <a href="#product">Product</a>
+                    <a href="how-it-works.html">How It Works</a>
+                    <a href="#features">Features</a>
+                    <a href="#solutions">Solutions</a>
+                    <a href="#demo" class="hero-cta-btn">Book a Demo</a>
+                </nav>
+                
+                <button class="mobile-menu-btn" id="heroMobileMenuBtn" aria-label="Toggle menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 5h16"></path>
+                        <path d="M4 12h16"></path>
+                        <path d="M4 19h16"></path>
+                    </svg>
+                </button>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="top">
-        <div class="hero-bg"></div>
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <span class="badge">
-                        <span class="badge-dot"></span>
-                        Healthcare workflow automation
-                    </span>
-                    <h1 class="hero-title">AI-powered automation for modern healthcare<span class="text-primary">.</span></h1>
-                    <p class="hero-subtitle">Automate patient communication, appointments, follow-ups and everyday hospital workflows — while your staff focus on what matters most: patient care.</p>
-                    <div class="hero-cta">
-                        <a href="#demo" class="btn btn-primary btn-lg">Book a Demo</a>
-                        <a href="how-it-works.html" class="btn btn-secondary btn-lg">See How It Works</a>
+        <!-- Hero Content -->
+        <section class="hero-content-wrapper">
+            <div class="hero-content-inner">
+                <!-- Badge -->
+                <div class="hero-badge">
+                    <span>Now with GPT-4 support</span>
+                    <span class="hero-badge-icon">✨</span>
+                </div>
+
+                <!-- Headline -->
+                <h1 class="hero-headline">
+                    The Future of<br><em class="hero-headline-italic">Smarter</em><br>Healthcare Automation
+                </h1>
+
+                <!-- Subheadline -->
+                <p class="hero-subheadline">
+                    Automate your hospital's busywork with intelligent AI agents that learn, adapt, and execute—so your team can focus on what matters most: patient care.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="hero-buttons">
+                    <a href="#demo" class="hero-btn-primary">Book a demo</a>
+                    <button class="hero-btn-play" aria-label="Play video">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Dashboard Preview -->
+                <div class="dashboard-container">
+                    <div class="dashboard-glass">
+                        <div class="dashboard-inner">
+                            <!-- Dashboard Top Bar -->
+                            <div class="dashboard-topbar">
+                                <div class="dashboard-topbar-left">
+                                    <div class="dashboard-logo">M</div>
+                                    <span class="dashboard-title">Medrelay</span>
+                                    <svg class="dashboard-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="dashboard-search">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <path d="m21 21-4.35-4.35"></path>
+                                    </svg>
+                                    <span>Search...</span>
+                                    <kbd>⌘K</kbd>
+                                </div>
+                                <div class="dashboard-topbar-right">
+                                    <button class="dashboard-action-btn">Schedule Patient</button>
+                                    <button class="dashboard-icon-btn">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path>
+                                            <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
+                                        </svg>
+                                    </button>
+                                    <div class="dashboard-avatar">DR</div>
+                                </div>
+                            </div>
+
+                            <!-- Dashboard Main -->
+                            <div class="dashboard-main">
+                                <!-- Sidebar -->
+                                <div class="dashboard-sidebar">
+                                    <div class="dashboard-sidebar-item active">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                        </svg>
+                                        <span>Home</span>
+                                    </div>
+                                    <div class="dashboard-sidebar-item">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                            <circle cx="9" cy="7" r="4"></circle>
+                                        </svg>
+                                        <span>Patients</span>
+                                        <span class="dashboard-badge">24</span>
+                                    </div>
+                                    <div class="dashboard-sidebar-item">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        <span>Appointments</span>
+                                    </div>
+                                    <div class="dashboard-sidebar-item">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                                            <polyline points="14 2 14 8 20 8"></polyline>
+                                        </svg>
+                                        <span>Reports</span>
+                                    </div>
+                                    <div class="dashboard-sidebar-divider"></div>
+                                    <div class="dashboard-sidebar-label">AI Workflows</div>
+                                    <div class="dashboard-sidebar-item">
+                                        <span>Appointment Booking</span>
+                                    </div>
+                                    <div class="dashboard-sidebar-item">
+                                        <span>Follow-ups</span>
+                                    </div>
+                                    <div class="dashboard-sidebar-item">
+                                        <span>Report Delivery</span>
+                                    </div>
+                                </div>
+
+                                <!-- Content -->
+                                <div class="dashboard-content">
+                                    <!-- Welcome -->
+                                    <div class="dashboard-welcome">
+                                        <h2>Welcome, Dr. Ahmed</h2>
+                                    </div>
+
+                                    <!-- Action Buttons -->
+                                    <div class="dashboard-actions">
+                                        <button class="action-pill active">Send Message</button>
+                                        <button class="action-pill">Book Appointment</button>
+                                        <button class="action-pill">View Reports</button>
+                                        <button class="action-pill">Patient History</button>
+                                        <button class="action-pill">Prescriptions</button>
+                                        <button class="action-pill">Lab Orders</button>
+                                        <button class="action-pill-customize">+ Customize</button>
+                                    </div>
+
+                                    <!-- Cards Row -->
+                                    <div class="dashboard-cards-row">
+                                        <!-- Patient Stats Card -->
+                                        <div class="dashboard-card">
+                                            <div class="card-header">
+                                                <div class="card-title">
+                                                    <span>Patient Activity</span>
+                                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="card-amount">1,248</div>
+                                            <div class="card-stats">
+                                                <div class="stat-item">
+                                                    <span class="stat-label">Last 30 Days</span>
+                                                </div>
+                                                <div class="stat-item positive">
+                                                    <span>+342</span>
+                                                    <span class="stat-label">New</span>
+                                                </div>
+                                                <div class="stat-item negative">
+                                                    <span>-18</span>
+                                                    <span class="stat-label">Missed</span>
+                                                </div>
+                                            </div>
+                                            <svg class="card-chart" viewBox="0 0 300 80" preserveAspectRatio="none">
+                                                <defs>
+                                                    <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                        <stop offset="0%" style="stop-color:rgb(99, 102, 241);stop-opacity:0.15" />
+                                                        <stop offset="100%" style="stop-color:rgb(99, 102, 241);stop-opacity:0" />
+                                                    </linearGradient>
+                                                </defs>
+                                                <path d="M 0 60 Q 30 45, 60 50 T 120 40 T 180 35 T 240 30 T 300 25" 
+                                                      fill="url(#chartGradient)" 
+                                                      stroke="rgb(99, 102, 241)" 
+                                                      stroke-width="1.5" />
+                                            </svg>
+                                        </div>
+
+                                        <!-- Departments Card -->
+                                        <div class="dashboard-card">
+                                            <div class="card-header">
+                                                <span class="card-title">Departments</span>
+                                                <div class="card-actions">
+                                                    <button class="card-action-btn">+</button>
+                                                    <button class="card-action-btn">⋮</button>
+                                                </div>
+                                            </div>
+                                            <div class="departments-list">
+                                                <div class="department-item">
+                                                    <span class="department-name">Cardiology</span>
+                                                    <span class="department-value">142</span>
+                                                </div>
+                                                <div class="department-item">
+                                                    <span class="department-name">Orthopedics</span>
+                                                    <span class="department-value">218</span>
+                                                </div>
+                                                <div class="department-item">
+                                                    <span class="department-name">Pediatrics</span>
+                                                    <span class="department-value">376</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Transactions Table -->
+                                    <div class="dashboard-table">
+                                        <h3 class="table-title">Recent Appointments</h3>
+                                        <table class="transactions-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Date</th>
+                                                    <th>Patient</th>
+                                                    <th>Department</th>
+                                                    <th>Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Today, 3:00 PM</td>
+                                                    <td>Sarah Johnson</td>
+                                                    <td>Cardiology</td>
+                                                    <td><span class="status-badge pending">Pending</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Today, 2:30 PM</td>
+                                                    <td>Michael Chen</td>
+                                                    <td>Orthopedics</td>
+                                                    <td><span class="status-badge completed">Completed</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Today, 11:00 AM</td>
+                                                    <td>Emma Williams</td>
+                                                    <td>Pediatrics</td>
+                                                    <td><span class="status-badge completed">Completed</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Yesterday</td>
+                                                    <td>James Brown</td>
+                                                    <td>Cardiology</td>
+                                                    <td><span class="status-badge completed">Completed</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
+
+    <!-- Rest of the page continues below -->
 
     <!-- Problem Section -->
     <section class="problem-section" id="product">
