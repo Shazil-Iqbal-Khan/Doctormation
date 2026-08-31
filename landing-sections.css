@@ -1076,73 +1076,39 @@
 /* Footer */
 .footer {
     padding: 4rem 0 2rem;
-    background: linear-gradient(180deg, hsl(0, 0%, 98%) 0%, hsl(220, 20%, 97%) 100%);
+    background: linear-gradient(180deg, hsl(0, 0%, 98%) 0%, hsl(220, 14%, 96%) 100%);
     border-top: 1px solid var(--hero-border);
     position: relative;
     overflow: hidden;
 }
 
-/* Animated gradient orbs */
+/* Subtle dot pattern overlay */
 .footer::before {
     content: '';
     position: absolute;
-    top: -30%;
-    left: -10%;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, transparent 70%);
-    border-radius: 50%;
-    animation: floatFooter1 25s ease-in-out infinite;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 1px 1px, rgba(59, 130, 246, 0.08) 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.5;
     z-index: 0;
     pointer-events: none;
 }
 
+/* Very subtle gradient accent */
 .footer::after {
     content: '';
     position: absolute;
-    bottom: -40%;
-    right: -15%;
-    width: 700px;
-    height: 700px;
-    background: radial-gradient(circle, rgba(139, 92, 246, 0.08) 0%, transparent 70%);
-    border-radius: 50%;
-    animation: floatFooter2 30s ease-in-out infinite reverse;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background: linear-gradient(180deg, transparent 0%, rgba(239, 84, 67, 0.02) 100%);
     z-index: 0;
     pointer-events: none;
-}
-
-/* Mesh gradient overlay */
-.footer-top::before {
-    content: '';
-    position: absolute;
-    inset: -100%;
-    background: 
-        radial-gradient(ellipse 400px 300px at 30% 20%, rgba(99, 102, 241, 0.06) 0%, transparent 50%),
-        radial-gradient(ellipse 350px 250px at 70% 80%, rgba(139, 92, 246, 0.05) 0%, transparent 50%),
-        linear-gradient(90deg, transparent 0%, rgba(59, 130, 246, 0.02) 50%, transparent 100%);
-    pointer-events: none;
-    z-index: 0;
-}
-
-@keyframes floatFooter1 {
-    0%, 100% {
-        transform: translate(0, 0) scale(1);
-    }
-    33% {
-        transform: translate(50px, -30px) scale(1.1);
-    }
-    66% {
-        transform: translate(-30px, 20px) scale(0.95);
-    }
-}
-
-@keyframes floatFooter2 {
-    0%, 100% {
-        transform: translate(0, 0) scale(1);
-    }
-    50% {
-        transform: translate(-40px, -40px) scale(1.15);
-    }
 }
 
 .footer .section-container {
