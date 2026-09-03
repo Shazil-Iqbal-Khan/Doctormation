@@ -149,16 +149,12 @@ function loadScenario(scenarioName) {
 function addMessage(msg) {
     const messagesContainer = document.getElementById('demoMessages');
     const messageDiv = document.createElement('div');
-    messageDiv.className = 'chat-message';
     
     if (msg.type === 'info') {
-        messageDiv.innerHTML = `
-            <div class="message-info">
-                ${msg.text}
-            </div>
-        `;
+        messageDiv.className = 'message-info';
+        messageDiv.textContent = msg.text;
     } else {
-        messageDiv.className = `chat-message message-${msg.type}`;
+        messageDiv.className = `whatsapp-message ${msg.type}`;
         messageDiv.innerHTML = `
             <div class="message-bubble">
                 ${msg.text.replace(/\n/g, '<br>')}

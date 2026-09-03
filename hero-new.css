@@ -50,6 +50,20 @@ body.hero-page {
     position: relative;
     z-index: 10;
     padding: 1.25rem 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-header.scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-bottom: 1px solid rgba(226, 232, 240, 0.5);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    padding: 0.75rem 0;
 }
 
 .hero-nav {
@@ -135,6 +149,58 @@ body.hero-page {
 @media (min-width: 1024px) {
     .mobile-menu-btn {
         display: none;
+    }
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    display: none;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid var(--hero-border);
+    padding: 1rem 0;
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
+.mobile-menu .section-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-menu a {
+    padding: 0.75rem 1rem;
+    color: var(--hero-muted);
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: all 0.2s;
+    border-radius: 0.5rem;
+}
+
+.mobile-menu a:hover {
+    background: rgba(59, 130, 246, 0.05);
+    color: var(--hero-foreground);
+}
+
+.mobile-menu .btn {
+    margin-top: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--hero-foreground);
+    color: white;
+    border-radius: 9999px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.mobile-menu .btn:hover {
+    background: hsl(210, 14%, 25%);
+}
+
+@media (min-width: 1024px) {
+    .mobile-menu {
+        display: none !important;
     }
 }
 

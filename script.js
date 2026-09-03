@@ -1,10 +1,22 @@
-// Mobile Menu Toggle
+// Mobile Menu Toggle - works for both header classes
 const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const heroMobileMenuBtn = document.getElementById('heroMobileMenuBtn');
 const mobileMenu = document.getElementById('mobileMenu');
 
+// Handle standard mobile menu button
 if (mobileMenuBtn) {
     mobileMenuBtn.addEventListener('click', () => {
         mobileMenu.classList.toggle('active');
+    });
+}
+
+// Handle hero mobile menu button
+if (heroMobileMenuBtn) {
+    heroMobileMenuBtn.addEventListener('click', () => {
+        const mobileMenuHero = document.getElementById('mobileMenu');
+        if (mobileMenuHero) {
+            mobileMenuHero.classList.toggle('active');
+        }
     });
 }
 
@@ -18,17 +30,26 @@ if (mobileLinks) {
     });
 }
 
-// Header scroll effect
+// Header scroll effect - works for both header types
 const header = document.getElementById('header');
+const heroHeader = document.querySelector('.hero-header');
 let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
     
-    if (currentScroll > 50) {
+    // Standard header
+    if (header && currentScroll > 50) {
         header.classList.add('scrolled');
-    } else {
+    } else if (header) {
         header.classList.remove('scrolled');
+    }
+    
+    // Hero header
+    if (heroHeader && currentScroll > 50) {
+        heroHeader.classList.add('scrolled');
+    } else if (heroHeader) {
+        heroHeader.classList.remove('scrolled');
     }
     
     lastScroll = currentScroll;
